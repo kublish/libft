@@ -6,7 +6,7 @@
 /*   By: zkubli <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 10:56:11 by zkubli            #+#    #+#             */
-/*   Updated: 2019/09/21 15:33:53 by zkubli           ###   ########.fr       */
+/*   Updated: 2019/11/22 13:14:06 by zkubli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strnew(size_t size)
 
 	if (!(memptr = (char *)(malloc(size + 1))))
 		return (NULL);
-	while (size)
-		*(memptr + size--) = 0;
+	while (size--)
+		*(memptr + size) = 0;
 	*memptr = 0;
 	return (memptr);
 }

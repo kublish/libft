@@ -6,12 +6,13 @@
 /*   By: zkubli <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 13:07:22 by zkubli            #+#    #+#             */
-/*   Updated: 2019/09/20 09:50:20 by zkubli           ###   ########.fr       */
+/*   Updated: 2019/11/22 13:02:56 by zkubli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {
@@ -19,7 +20,6 @@ void	*ft_memalloc(size_t size)
 
 	if (!(memptr = (void *)(malloc(size))))
 		return (NULL);
-	while (size--)
-		*((int *)memptr + size) = 0;
+	ft_bzero(memptr, size);
 	return (memptr);
 }

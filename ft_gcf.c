@@ -6,9 +6,11 @@
 /*   By: zkubli <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 16:36:54 by zkubli            #+#    #+#             */
-/*   Updated: 2019/09/24 16:58:25 by zkubli           ###   ########.fr       */
+/*   Updated: 2019/11/22 12:47:24 by zkubli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** returns the greatest common factor between a and b
